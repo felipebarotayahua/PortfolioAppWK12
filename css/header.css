@@ -1,0 +1,125 @@
+header {
+    border-bottom: 1px solid #ccc;
+    background-image: url(background.jpeg);
+  }
+  
+  .navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+  
+  .navbar-nav .nav-link {
+    font-size: 1.2rem;
+  }
+  
+  .navbar-toggler {
+    border: none;
+  }
+  
+  .navbar-toggler-icon {
+    background-color: #333;
+    height: 2px;
+    width: 20px;
+  }
+  
+  .navbar-toggler:focus,
+  .navbar-toggler:active,
+  .navbar-toggler:hover {
+    outline: none;
+  }
+  
+  .navbar-nav .nav-item.active .nav-link {
+    color: #333;
+    font-weight: bold;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .navbar-nav {
+      background-color: #78bfc7;
+      padding: 10px;
+      position: absolute;
+      top: 50px;
+      right: 0;
+      left: 0;
+      z-index: 999;
+      border-bottom: 1px solid #78bfc7;
+    }
+  
+    .navbar-nav .nav-item {
+      border-bottom: 1px solid #78bfc7;
+      margin-bottom: 10px;
+    }
+  
+    .navbar-nav .nav-link {
+      color: #333;
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+  }
+
+  .demo{ background-image: url(background.jpeg) }
+  a:hover,a:focus{
+      text-decoration: none;
+      outline: none;
+  }
+  #accordion .panel{
+      border: none;
+      border-radius: 5px;
+      box-shadow: none;
+      margin-bottom: 10px;
+      background: transparent;
+  }
+  #accordion .panel-heading{
+      padding: 0;
+      border: none;
+      border-radius: 5px;
+      background: transparent;
+      position: relative;
+  }
+  #accordion .panel-title a{
+      display: block;
+      padding: 20px 30px;
+      margin: 0;
+      background: rgba(0,0,0,0.4);
+      font-size: 17px;
+      font-weight: bold;
+      color: #fff;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      border: none;
+      border-radius: 5px;
+      position: relative;
+  }
+  #accordion .panel-title a.collapsed{ border: none; }
+  #accordion .panel-title a:before,
+  #accordion .panel-title a.collapsed:before{
+      content: "\f107";
+      font-family: "Font Awesome 5 Free";
+      width: 30px;
+      height: 30px;
+      line-height: 27px;
+      text-align: center;
+      font-size: 25px;
+      font-weight: 900;
+      color: #fff;
+      position: absolute;
+      top: 15px;
+      right: 30px;
+      transform: rotate(180deg);
+      transition: all .4s cubic-bezier(0.080, 1.090, 0.320, 1.275);
+  }
+  #accordion .panel-title a.collapsed:before{
+      color: rgba(255,255,255,0.5);
+      transform: rotate(0deg);
+  }
+  #accordion .panel-body{
+      padding: 20px 30px;
+      background: rgba(0,0,0,0.1);
+      font-size: 15px;
+      color: #fff;
+      line-height: 28px;
+      letter-spacing: 1px;
+      border-top: none;
+      border-radius: 5px;
+  }
+ 
